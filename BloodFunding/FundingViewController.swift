@@ -53,6 +53,7 @@ class FundingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         if (segue.destination is FundingMessageViewController){
             
             
+            
         }
         
     }

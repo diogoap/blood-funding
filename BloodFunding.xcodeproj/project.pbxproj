@@ -14,6 +14,9 @@
 		D90C333321EE4BCC0047E3AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90C333121EE4BCC0047E3AA /* Main.storyboard */; };
 		D90C333521EE4BCE0047E3AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90C333421EE4BCE0047E3AA /* Assets.xcassets */; };
 		D90C333821EE4BCE0047E3AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90C333621EE4BCE0047E3AA /* LaunchScreen.storyboard */; };
+		D98DF93E21EFA07800D2D239 /* BloodDonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF93D21EFA07800D2D239 /* BloodDonateViewController.swift */; };
+		D98DF94021EFB1BE00D2D239 /* FinishBloodDonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF93F21EFB1BE00D2D239 /* FinishBloodDonateViewController.swift */; };
+		D98DF94221EFB44B00D2D239 /* AdditionalContribBloodDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DF94121EFB44B00D2D239 /* AdditionalContribBloodDonationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		D90C333421EE4BCE0047E3AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D90C333721EE4BCE0047E3AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D90C333921EE4BCE0047E3AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D98DF93D21EFA07800D2D239 /* BloodDonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodDonateViewController.swift; sourceTree = "<group>"; };
+		D98DF93F21EFB1BE00D2D239 /* FinishBloodDonateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishBloodDonateViewController.swift; sourceTree = "<group>"; };
+		D98DF94121EFB44B00D2D239 /* AdditionalContribBloodDonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalContribBloodDonationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,9 @@
 				D90C332F21EE4BCC0047E3AA /* ViewController.swift */,
 				D90C333121EE4BCC0047E3AA /* Main.storyboard */,
 				D1FE463B21EFB6D300D495C7 /* FundingMessageViewController.swift */,
+				D98DF94121EFB44B00D2D239 /* AdditionalContribBloodDonationViewController.swift */,
+				D98DF93F21EFB1BE00D2D239 /* FinishBloodDonateViewController.swift */,
+				D98DF93D21EFA07800D2D239 /* BloodDonateViewController.swift */,
 				D90C333421EE4BCE0047E3AA /* Assets.xcassets */,
 				D90C333621EE4BCE0047E3AA /* LaunchScreen.storyboard */,
 				D90C333921EE4BCE0047E3AA /* Info.plist */,
@@ -143,8 +152,11 @@
 			files = (
 				D1FE463C21EFB6D300D495C7 /* FundingMessageViewController.swift in Sources */,
 				D90C333021EE4BCC0047E3AA /* ViewController.swift in Sources */,
+				D98DF94221EFB44B00D2D239 /* AdditionalContribBloodDonationViewController.swift in Sources */,
 				D90C332E21EE4BCC0047E3AA /* AppDelegate.swift in Sources */,
 				D1FE463A21EFA9A800D495C7 /* FundingViewController.swift in Sources */,
+				D98DF93E21EFA07800D2D239 /* BloodDonateViewController.swift in Sources */,
+				D98DF94021EFB1BE00D2D239 /* FinishBloodDonateViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
