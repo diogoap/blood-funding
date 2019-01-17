@@ -47,6 +47,13 @@ class FundingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         
         if (segue.destination is FundingMessageViewController){
             
+            let formatter = NumberFormatter()
+            formatter.generatesDecimalNumbers = true
+            
+            let valor = formatter.number(from: fieldValor.text!) as! NSDecimalNumber
+            
+            Transactions.contribute(value: valor)
+            
             let viewController = segue.destination as! FundingMessageViewController
             viewController.valor = fieldValor?.text ?? "0,00"
             
