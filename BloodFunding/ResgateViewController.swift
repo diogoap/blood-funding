@@ -20,7 +20,7 @@ class ResgateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         bancoPicker.delegate = self
         bancoPicker.dataSource = self
         
-        txtValor.text = String(describing: Transactions.getAmoutToRecieve())
+        txtValor.text = Transactions.formatValue(value: Transactions.getAmoutToRecieve())
     }
     
     override func didReceiveMemoryWarning() {
