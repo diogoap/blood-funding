@@ -13,4 +13,10 @@ class AdditionalContribBloodDonationViewController: UIViewController {
     @IBAction func btnFinish(_ sender: Any) {
         self.navigationController?.popToRootViewController(animated: true);
     }
+    
+    @IBOutlet weak var lblValue: UILabel!
+    
+    override func viewDidLoad() {
+        lblValue.text = "R$ " + String(format: "%.2f", FinishBloodDonateViewController.amountReceived)
+    }
 }

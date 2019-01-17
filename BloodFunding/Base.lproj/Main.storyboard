@@ -829,6 +829,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Iin-Sv-vaB"/>
                     </view>
+                    <connections>
+                        <outlet property="lblValue" destination="MEd-1w-jZl" id="Rol-xv-w0j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bAG-dL-bIE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -908,6 +911,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K0N-wD-Vba"/>
                     </view>
+                    <connections>
+                        <outlet property="lblValue" destination="Cny-1Y-cVF" id="X0R-nK-JUi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mkt-Qj-nom" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
