@@ -139,7 +139,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5GL-bM-gJa">
                                 <rect key="frame" x="10" y="74" width="355" height="534"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="cPp-6P-Jyb">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cPp-6P-Jyb">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="147.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="xjj-aD-qjM">
@@ -560,7 +560,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y23-J0-STd">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="128"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resgate efetuado com Sucesso!" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUN-51-h8Y">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resgate efetuado com Sucesso!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUN-51-h8Y">
                                                 <rect key="frame" x="0.0" y="0.0" width="227" height="128"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                                 <nil key="textColor"/>
@@ -646,7 +646,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <datePicker contentMode="scaleToFill" verticalCompressionResistancePriority="748" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="RPu-P0-uHX">
-                                                <rect key="frame" x="0.0" y="30.5" width="320" height="75"/>
+                                                <rect key="frame" x="0.0" y="30.5" width="349" height="75"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="75" id="uQf-pO-A4d"/>
                                                 </constraints>
@@ -664,7 +664,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aUB-dg-WAt">
-                                                <rect key="frame" x="0.0" y="146" width="320" height="75"/>
+                                                <rect key="frame" x="0.0" y="146" width="349" height="75"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="75" id="8Cp-NA-dNl"/>
                                                 </constraints>
@@ -692,10 +692,27 @@
                                                                 <rect key="frame" x="0.0" y="50" width="349" height="193"/>
                                                             </imageView>
                                                         </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="x1x-b5-eoj" firstAttribute="leading" secondItem="Iz7-5I-VPh" secondAttribute="leading" id="193-Ed-4bq"/>
+                                                            <constraint firstAttribute="bottom" secondItem="x1x-b5-eoj" secondAttribute="bottom" constant="10" id="1tP-Do-ILF"/>
+                                                            <constraint firstItem="HAv-mP-eJd" firstAttribute="leading" secondItem="Iz7-5I-VPh" secondAttribute="leading" id="Jer-3P-Fk2"/>
+                                                            <constraint firstAttribute="trailing" secondItem="HAv-mP-eJd" secondAttribute="trailing" id="YtY-31-zRO"/>
+                                                            <constraint firstItem="x1x-b5-eoj" firstAttribute="top" secondItem="HAv-mP-eJd" secondAttribute="bottom" constant="10" id="dJg-1u-IYw"/>
+                                                            <constraint firstAttribute="trailing" secondItem="x1x-b5-eoj" secondAttribute="trailing" id="zyT-nJ-mOf"/>
+                                                        </constraints>
                                                     </stackView>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="Iz7-5I-VPh" secondAttribute="bottom" constant="10" id="akY-Gr-zf3"/>
+                                                </constraints>
                                             </stackView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="RPu-P0-uHX" secondAttribute="trailing" id="34e-eD-iiD"/>
+                                            <constraint firstItem="RPu-P0-uHX" firstAttribute="leading" secondItem="Eu2-qg-6pk" secondAttribute="leading" id="fMj-bY-jjK"/>
+                                            <constraint firstAttribute="trailing" secondItem="aUB-dg-WAt" secondAttribute="trailing" id="h8j-4f-yKc"/>
+                                            <constraint firstItem="aUB-dg-WAt" firstAttribute="leading" secondItem="Eu2-qg-6pk" secondAttribute="leading" id="hbC-8R-5Ue"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fJK-8d-NAu">
                                         <rect key="frame" x="0.0" y="474" width="349" height="60"/>
