@@ -20,7 +20,10 @@ class FinishBloodDonateViewController: UIViewController {
     
     override func viewDidLoad() {
         FinishBloodDonateViewController.amountReceived = Transactions.getAmoutToRecieve()
-        lblValue.text = "R$ " + String(format: "%.2f", FinishBloodDonateViewController.amountReceived)
+        lblValue.text = Transactions.formatValue(value: FinishBloodDonateViewController.amountReceived)
+        
+        Transactions.updateDonations()
+        Transactions.donate(value: FinishBloodDonateViewController.amountReceived)
     }
     
 }

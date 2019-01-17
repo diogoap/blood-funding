@@ -17,6 +17,6 @@ class AdditionalContribBloodDonationViewController: UIViewController {
     @IBOutlet weak var lblValue: UILabel!
     
     override func viewDidLoad() {
-        lblValue.text = "R$ " + String(format: "%.2f", FinishBloodDonateViewController.amountReceived)
+        lblValue.text = Transactions.formatValue(value: FinishBloodDonateViewController.amountReceived)
     }
 }

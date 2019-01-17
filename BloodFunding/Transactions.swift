@@ -19,11 +19,12 @@ final class Transactions {
     }
     
     static func contribute(value: NSDecimalNumber) {
-        contributuionsAmount.adding(value)
+        contributuionsAmount = contributuionsAmount.adding(value)
+        print(contributuionsAmount)
     }
     
     static func donate(value: NSDecimalNumber) {
-        donationsAmount.adding(value)
+        donationsAmount = donationsAmount.adding(value)
     }
     
     static func updateDonations(){
@@ -39,5 +40,12 @@ final class Transactions {
     
     static func recieve(){
        contributuionsAmount = contributuionsAmount.subtracting(contributuionsAmount.dividing(by: (NSDecimalNumber(integerLiteral: donationsCount))))
+    }
+    
+    static func formatValue(value: NSDecimalNumber) -> String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .currency
+        numberFormatter.currencySymbol = "R$ "
+        return numberFormatter.string(from: value)!
     }
 }

@@ -11,8 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
-        lblAmountToReceive.text = "R$ " + String(format: "%.2f", Transactions.donationsAmount)
-        lblAmountContributed.text = "R$ " + String(format: "%.2f", Transactions.contributuionsAmount)
+        lblAmountToReceive.text = Transactions.formatValue(value: Transactions.donationsAmount)
+        lblAmountContributed.text = Transactions.formatValue(value: Transactions.contributuionsAmount)
     }
 
     @IBOutlet weak var lblAmountToReceive: UILabel!
