@@ -11,6 +11,7 @@ import UIKit
 class ResgateViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var bancoPicker: UIPickerView!
+    @IBOutlet weak var txtValor: UITextField!
     
     let bancoPickerData = ["Banco do Brasil","Itaú", "Caixa Federal", "Santander"]
     
@@ -18,6 +19,8 @@ class ResgateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         super.viewDidLoad()
         bancoPicker.delegate = self
         bancoPicker.dataSource = self
+        
+        txtValor.text = String(describing: Transactions.getAmoutToRecieve())
     }
     
     override func didReceiveMemoryWarning() {
@@ -34,5 +37,13 @@ class ResgateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return bancoPickerData[row]
+    }
+    
+    @IBAction func btnCancelar(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func btnConfirmar(_ sender: Any) {
+        Transactions.recieve()
     }
 }
