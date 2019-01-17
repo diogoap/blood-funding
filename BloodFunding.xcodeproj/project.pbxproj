@@ -71,8 +71,6 @@
 				209D7B5021EFB46600DBEBCE /* ResgateViewController.swift */,
 				D90C333121EE4BCC0047E3AA /* Main.storyboard */,
 				D1FE463B21EFB6D300D495C7 /* FundingMessageViewController.swift */,
-				D932EC1821F0DF7B00969777 /* .gitignore */,
-				D932EC1A21F0E00000969777 /* .gitattributes */,
 				D98DF94121EFB44B00D2D239 /* AdditionalContribBloodDonationViewController.swift */,
 				D98DF93F21EFB1BE00D2D239 /* FinishBloodDonateViewController.swift */,
 				D98DF93D21EFA07800D2D239 /* BloodDonateViewController.swift */,

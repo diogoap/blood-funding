@@ -37,7 +37,7 @@
         <scene sceneID="v7g-nJ-U0g">
             <objects>
                 <navigationController id="vTU-Ek-Hmn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Início" id="Gd5-1A-NTI"/>
+                    <tabBarItem key="tabBarItem" title="Início" image="home" id="Gd5-1A-NTI"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hBb-il-V4Q">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -792,7 +792,7 @@
         <scene sceneID="LBj-De-RI4">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wEX-tx-e0A" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Perfil" id="sTA-GT-aT9"/>
+                    <tabBarItem key="tabBarItem" title="Perfil" image="profile" id="sTA-GT-aT9"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Sso-BH-T3b">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -828,6 +828,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="home" width="22.5" height="22.5"/>
         <image name="ok" width="512" height="512"/>
+        <image name="profile" width="22.5" height="22.5"/>
     </resources>
 </document>
