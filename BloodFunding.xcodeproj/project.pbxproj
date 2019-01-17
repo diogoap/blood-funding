@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		209D7B5121EFB46600DBEBCE /* ResgateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209D7B5021EFB46600DBEBCE /* ResgateViewController.swift */; };
 		D90C332E21EE4BCC0047E3AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90C332D21EE4BCC0047E3AA /* AppDelegate.swift */; };
 		D90C333021EE4BCC0047E3AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90C332F21EE4BCC0047E3AA /* ViewController.swift */; };
 		D90C333321EE4BCC0047E3AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D90C333121EE4BCC0047E3AA /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		209D7B5021EFB46600DBEBCE /* ResgateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResgateViewController.swift; sourceTree = "<group>"; };
 		D90C332A21EE4BCC0047E3AA /* BloodFunding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloodFunding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90C332D21EE4BCC0047E3AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D90C332F21EE4BCC0047E3AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				D90C332D21EE4BCC0047E3AA /* AppDelegate.swift */,
 				D90C332F21EE4BCC0047E3AA /* ViewController.swift */,
+				209D7B5021EFB46600DBEBCE /* ResgateViewController.swift */,
 				D90C333121EE4BCC0047E3AA /* Main.storyboard */,
 				D90C333421EE4BCE0047E3AA /* Assets.xcassets */,
 				D90C333621EE4BCE0047E3AA /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				209D7B5121EFB46600DBEBCE /* ResgateViewController.swift in Sources */,
 				D90C333021EE4BCC0047E3AA /* ViewController.swift in Sources */,
 				D90C332E21EE4BCC0047E3AA /* AppDelegate.swift in Sources */,
 			);

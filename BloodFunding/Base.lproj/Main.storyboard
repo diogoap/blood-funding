@@ -132,7 +132,7 @@
         <!--Dados de Resgate-->
         <scene sceneID="FK1-8X-Aaa">
             <objects>
-                <viewController title="Dados de Resgate" id="pHy-0o-S84" sceneMemberID="viewController">
+                <viewController title="Dados de Resgate" id="pHy-0o-S84" customClass="ResgateViewController" customModule="BloodFunding" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dh1-jg-FUN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -222,24 +222,18 @@
                                         <rect key="frame" x="0.0" y="267" width="355" height="267"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ApM-gV-YcZ">
-                                                <rect key="frame" x="0.0" y="217" width="172.5" height="50"/>
+                                                <rect key="frame" x="0.0" y="217" width="355" height="50"/>
                                                 <color key="backgroundColor" red="0.87274926900000005" green="0.061346918340000001" blue="0.2300168276" alpha="0.99607849120000003" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="QgJ-8S-V2c"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <state key="normal" title="Confirmar">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7N6-Vq-Nxe">
-                                                <rect key="frame" x="182.5" y="217" width="172.5" height="50"/>
-                                                <color key="backgroundColor" red="0.87274926900000005" green="0.061346918340000001" blue="0.2300168276" alpha="0.99607849120000003" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="xqp-K8-GK5"/>
-                                                </constraints>
-                                                <state key="normal" title="Cancelar">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
+                                                <connections>
+                                                    <segue destination="NHs-Es-44L" kind="presentation" id="YG8-Mt-5X3"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -255,10 +249,92 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bku-lb-x73"/>
                     </view>
+                    <connections>
+                        <outlet property="bancoPicker" destination="SDV-WJ-ixy" id="gee-Ge-LAV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kbg-ky-guf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2509.5999999999999" y="-1030.4347826086957"/>
+            <point key="canvasLocation" x="2625" y="-1379"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qb5-iC-eAS">
+            <objects>
+                <viewController id="NHs-Es-44L" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="baY-tf-9qy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yee-ge-Ie1">
+                                <rect key="frame" x="10" y="40" width="355" height="617"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y23-J0-STd">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="128"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resgate efetuado com Sucesso!" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUN-51-h8Y">
+                                                <rect key="frame" x="0.0" y="0.0" width="227" height="128"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ok" translatesAutoresizingMaskIntoConstraints="NO" id="S3k-nc-DPe">
+                                                <rect key="frame" x="227" y="0.0" width="128" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="Gpb-x3-8Tj"/>
+                                                    <constraint firstAttribute="width" constant="128" id="MvT-hV-5tz"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="S3k-nc-DPe" secondAttribute="trailing" id="dcr-nn-uH5"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aOT-qX-poK">
+                                        <rect key="frame" x="0.0" y="128" width="355" height="439"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O valor foi creditado na conta bancária informada." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1XG-jU-Ml5">
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="439"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="n7h-cc-Vjm">
+                                        <rect key="frame" x="0.0" y="567" width="355" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dz3-36-2C4">
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="50"/>
+                                                <color key="backgroundColor" red="0.87274926900000005" green="0.061346918340000001" blue="0.2300168276" alpha="0.99607849120000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <state key="normal" title="Fechar">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="VSm-VN-hTp" kind="show" id="eMV-h0-ELv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="FCa-BE-Vse"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yee-ge-Ie1" firstAttribute="top" secondItem="baY-tf-9qy" secondAttribute="top" constant="40" id="J2v-GF-T5X"/>
+                            <constraint firstItem="yee-ge-Ie1" firstAttribute="leading" secondItem="r6j-RV-uwc" secondAttribute="leading" constant="10" id="nJL-tk-7CX"/>
+                            <constraint firstItem="r6j-RV-uwc" firstAttribute="trailing" secondItem="yee-ge-Ie1" secondAttribute="trailing" constant="10" id="xmh-lN-yPR"/>
+                            <constraint firstItem="r6j-RV-uwc" firstAttribute="bottom" secondItem="yee-ge-Ie1" secondAttribute="bottom" constant="10" id="y97-DH-poO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="r6j-RV-uwc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zWE-Hh-gMA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3701.5999999999999" y="-1379.4602698650676"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ww8-72-QHH">
@@ -422,4 +498,7 @@
             <point key="canvasLocation" x="-428" y="-884"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ok" width="512" height="512"/>
+    </resources>
 </document>
