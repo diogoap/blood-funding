@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		207E9C3021F0F0DA00D77887 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E9C2F21F0F0DA00D77887 /* Transactions.swift */; };
 		209D7B5121EFB46600DBEBCE /* ResgateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209D7B5021EFB46600DBEBCE /* ResgateViewController.swift */; };
 		D1FE463A21EFA9A800D495C7 /* FundingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE463721EFA7F700D495C7 /* FundingViewController.swift */; };
 		D1FE463C21EFB6D300D495C7 /* FundingMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE463B21EFB6D300D495C7 /* FundingMessageViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		207E9C2F21F0F0DA00D77887 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
 		209D7B5021EFB46600DBEBCE /* ResgateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResgateViewController.swift; sourceTree = "<group>"; };
 		D1FE463721EFA7F700D495C7 /* FundingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundingViewController.swift; sourceTree = "<group>"; };
 		D1FE463B21EFB6D300D495C7 /* FundingMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundingMessageViewController.swift; sourceTree = "<group>"; };
@@ -70,9 +72,8 @@
 				D90C332F21EE4BCC0047E3AA /* ViewController.swift */,
 				209D7B5021EFB46600DBEBCE /* ResgateViewController.swift */,
 				D90C333121EE4BCC0047E3AA /* Main.storyboard */,
+				207E9C2F21F0F0DA00D77887 /* Transactions.swift */,
 				D1FE463B21EFB6D300D495C7 /* FundingMessageViewController.swift */,
-				D932EC1821F0DF7B00969777 /* .gitignore */,
-				D932EC1A21F0E00000969777 /* .gitattributes */,
 				D98DF94121EFB44B00D2D239 /* AdditionalContribBloodDonationViewController.swift */,
 				D98DF93F21EFB1BE00D2D239 /* FinishBloodDonateViewController.swift */,
 				D98DF93D21EFA07800D2D239 /* BloodDonateViewController.swift */,
@@ -161,6 +162,7 @@
 				D98DF94221EFB44B00D2D239 /* AdditionalContribBloodDonationViewController.swift in Sources */,
 				D90C332E21EE4BCC0047E3AA /* AppDelegate.swift in Sources */,
 				D1FE463A21EFA9A800D495C7 /* FundingViewController.swift in Sources */,
+				207E9C3021F0F0DA00D77887 /* Transactions.swift in Sources */,
 				D98DF93E21EFA07800D2D239 /* BloodDonateViewController.swift in Sources */,
 				D98DF94021EFB1BE00D2D239 /* FinishBloodDonateViewController.swift in Sources */,
 			);

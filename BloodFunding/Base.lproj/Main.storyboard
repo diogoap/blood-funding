@@ -31,7 +31,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1410" y="-545"/>
+            <point key="canvasLocation" x="1447" y="-377"/>
         </scene>
         <!--Início-->
         <scene sceneID="v7g-nJ-U0g">
@@ -49,7 +49,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8kV-oN-VGU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="455" y="-1411"/>
+            <point key="canvasLocation" x="556" y="-1483"/>
         </scene>
         <!--Blood Funding-->
         <scene sceneID="yss-v6-oBn">
@@ -130,7 +130,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lxl-yc-hjk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1447.2" y="-1402.8485757121441"/>
+            <point key="canvasLocation" x="1446" y="-1484"/>
         </scene>
         <!--Funding View Controller-->
         <scene sceneID="v0M-XY-Fxu">
@@ -246,7 +246,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Xa-n7-Ocj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2641" y="-1480"/>
+            <point key="canvasLocation" x="2510" y="-1665"/>
         </scene>
         <!--Funding Message View Controller-->
         <scene sceneID="M8S-gO-ly7">
@@ -300,7 +300,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eHT-at-ykX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3565.5999999999999" y="-1472.1139430284859"/>
+            <point key="canvasLocation" x="3241" y="-1666"/>
         </scene>
         <!--Dados de Resgate-->
         <scene sceneID="FK1-8X-Aaa">
@@ -395,7 +395,7 @@
                                         <rect key="frame" x="0.0" y="267" width="355" height="267"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ApM-gV-YcZ">
-                                                <rect key="frame" x="0.0" y="217" width="355" height="50"/>
+                                                <rect key="frame" x="0.0" y="217" width="172.5" height="50"/>
                                                 <color key="backgroundColor" red="0.87274926900000005" green="0.061346918340000001" blue="0.2300168276" alpha="0.99607849120000003" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="QgJ-8S-V2c"/>
@@ -405,7 +405,22 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
+                                                    <action selector="btnConfirmar:" destination="pHy-0o-S84" eventType="touchUpInside" id="kNu-FX-aCN"/>
                                                     <segue destination="NHs-Es-44L" kind="presentation" id="YG8-Mt-5X3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mz-QT-Jb1">
+                                                <rect key="frame" x="182.5" y="217" width="172.5" height="50"/>
+                                                <color key="backgroundColor" red="0.87274926900000005" green="0.061346918340000001" blue="0.2300168276" alpha="0.99607849120000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="8rH-a4-oDg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Cancelar">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnCancelar:" destination="pHy-0o-S84" eventType="touchUpInside" id="hb3-GX-7aa"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -424,11 +439,12 @@
                     </view>
                     <connections>
                         <outlet property="bancoPicker" destination="SDV-WJ-ixy" id="gee-Ge-LAV"/>
+                        <outlet property="txtValor" destination="L3C-Hx-2Bg" id="WXb-ip-brO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kbg-ky-guf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2625" y="-1379"/>
+            <point key="canvasLocation" x="2510" y="-960"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qb5-iC-eAS">
@@ -507,7 +523,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zWE-Hh-gMA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3701.5999999999999" y="-1379.4602698650676"/>
+            <point key="canvasLocation" x="3241" y="-960"/>
         </scene>
         <!--Blood Donate View Controller-->
         <scene sceneID="ww8-72-QHH">
@@ -815,7 +831,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YUl-EW-R9x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="454" y="-572"/>
+            <point key="canvasLocation" x="454" y="-377"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="5j1-9B-ixr">
