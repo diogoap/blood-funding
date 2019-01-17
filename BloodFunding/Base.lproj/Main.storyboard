@@ -75,7 +75,7 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="f18-IY-1df">
-                                                        <rect key="frame" x="0.0" y="216" width="278" height="51"/>
+                                                        <rect key="frame" x="0.0" y="215.5" width="278" height="51.5"/>
                                                         <date key="date" timeIntervalSinceReferenceDate="569440143.00916696">
                                                             <!--2019-01-17 17:49:03 +0000-->
                                                         </date>
@@ -155,7 +155,7 @@
         <!--Blood Funding-->
         <scene sceneID="yss-v6-oBn">
             <objects>
-                <viewController id="9wN-Fc-59I" sceneMemberID="viewController">
+                <viewController id="9wN-Fc-59I" customClass="ViewController" customModule="BloodFunding" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xw3-W7-o5x">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -261,6 +261,10 @@
                         <viewLayoutGuide key="safeArea" id="Qb8-HS-Fhh"/>
                     </view>
                     <navigationItem key="navigationItem" title="Blood Funding" id="ah1-r1-7Hi"/>
+                    <connections>
+                        <outlet property="lblAmountContributed" destination="DUQ-qd-8zG" id="APf-pV-efk"/>
+                        <outlet property="lblAmountToReceive" destination="GC5-8e-Zbu" id="O93-Eu-V0e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lxl-yc-hjk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

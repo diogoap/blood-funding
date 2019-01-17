@@ -10,11 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    override func viewDidAppear(_ animated: Bool) {
+        lblAmountToReceive.text = "R$ " + String(format: "%.2f", Transactions.donationsAmount)
+        lblAmountContributed.text = "R$ " + String(format: "%.2f", Transactions.contributuionsAmount)
     }
 
-
+    @IBOutlet weak var lblAmountToReceive: UILabel!
+    
+    @IBOutlet weak var lblAmountContributed: UILabel!
 }
 
