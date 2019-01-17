@@ -417,7 +417,8 @@
                         <constraints>
                             <constraint firstItem="Bku-lb-x73" firstAttribute="trailing" secondItem="AdA-Vo-1as" secondAttribute="trailing" constant="10" id="0xn-mJ-AZH"/>
                             <constraint firstItem="Bku-lb-x73" firstAttribute="bottom" secondItem="AdA-Vo-1as" secondAttribute="bottom" constant="10" id="5Yd-Hl-xNQ"/>
-                            <constraint firstItem="AdA-Vo-1as" firstAttribute="leading" secondItem="Bku-lb-x73" secondAttribute="leading" constant="10" id="cxf-D2-Hnk"/                            <constraint firstItem="AdA-Vo-1as" firstAttribute="top" secondItem="Bku-lb-x73" secondAttribute="top" constant="10" id="sOA-DD-hpp"/>
+                            <constraint firstItem="AdA-Vo-1as" firstAttribute="leading" secondItem="Bku-lb-x73" secondAttribute="leading" constant="10" id="cxf-D2-Hnk"/>
+                            <constraint firstItem="AdA-Vo-1as" firstAttribute="top" secondItem="Bku-lb-x73" secondAttribute="top" constant="10" id="sOA-DD-hpp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bku-lb-x73"/>
                     </view>
