@@ -44,6 +44,8 @@ class ResgateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     }
     
     @IBAction func btnConfirmar(_ sender: Any) {
-        Transactions.recieve()
+        if Int(truncating: Transactions.contributuionsAmount) > 0{
+            Transactions.recieve()
+        }
     }
 }
