@@ -14,7 +14,8 @@ class FundingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     @IBOutlet weak var pickerPagamento: UIPickerView!
     @IBOutlet weak var fieldValor: UITextField!
     
-    var pagamentos: [String] = ["Cartão de Crédito", "Depósito Bancário"]
+    var pagamentos: [String] = ["Cartão de Crédito", "Depósito Bancário", "Boleto"]
+    var caracteres_validos: [String] = ["0","1","2","3","4","5","6","7","8","9","."]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,21 +39,16 @@ class FundingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
 
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
     
-        /*
-        let dots = fieldValor.text?.split(separator: ".").count
-        
-        if (dots > 1){
-            return false
-        }*/
-        
-        return true
+        return string.rangeOfCharacter(from: CharacterSet.letters) == nil
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if (segue.destination is FundingMessageViewController){
             
-            
+            let viewController = segue.destination as! FundingMessageViewController
+            viewController.valor = fieldValor?.text ?? "0,00"
             
         }
         

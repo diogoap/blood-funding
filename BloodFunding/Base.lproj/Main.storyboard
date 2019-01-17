@@ -181,7 +181,7 @@
                                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8DE-Nz-fmp">
                                                         <rect key="frame" x="0.0" y="92.5" width="177.5" height="82"/>
                                                     </pickerView>
-                                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0mu-SM-102">
+                                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0mu-SM-102">
                                                         <rect key="frame" x="0.0" y="184.5" width="177.5" height="82.5"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -198,7 +198,7 @@
                                                 <rect key="frame" x="0.0" y="217" width="355" height="50"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Oi-1I-6ip">
-                                                        <rect key="frame" x="0.0" y="0.0" width="172.5" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="50"/>
                                                         <color key="backgroundColor" red="0.87274926900000005" green="0.061346918340000001" blue="0.2300168276" alpha="0.99607849120000003" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="t2U-lM-mRb"/>
@@ -209,16 +209,6 @@
                                                         <connections>
                                                             <segue destination="Pkz-8n-Caf" kind="show" id="9bF-sl-voW"/>
                                                         </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cm-Sf-ctz">
-                                                        <rect key="frame" x="182.5" y="0.0" width="172.5" height="50"/>
-                                                        <color key="backgroundColor" red="0.87274926900000005" green="0.061346918340000001" blue="0.2300168276" alpha="0.99607849120000003" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="50" id="Y5I-lT-UUi"/>
-                                                        </constraints>
-                                                        <state key="normal" title="Cancelar">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </state>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -246,7 +236,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Xa-n7-Ocj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2641" y="-1480"/>
+            <point key="canvasLocation" x="2625" y="-546"/>
         </scene>
         <!--Funding Message View Controller-->
         <scene sceneID="M8S-gO-ly7">
@@ -295,12 +285,12 @@
                         <viewLayoutGuide key="safeArea" id="2wb-KT-Twe"/>
                     </view>
                     <connections>
-                        <outlet property="labelMessage" destination="hhb-9k-M0A" id="MKf-xM-vvw"/>
+                        <outlet property="labelValor" destination="RZW-6d-Ddb" id="OWz-1V-FS7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eHT-at-ykX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3565.5999999999999" y="-1472.1139430284859"/>
+            <point key="canvasLocation" x="3641" y="-546"/>
         </scene>
         <!--Dados de Resgate-->
         <scene sceneID="FK1-8X-Aaa">
