@@ -12,7 +12,7 @@ final class Transactions {
     static var donationsAmount = NSDecimalNumber(integerLiteral: 0)
     static var contributuionsAmount = NSDecimalNumber(integerLiteral: 0)
 
-    static var donations = NSDecimalNumber(integerLiteral: 0)
+    static var donationsCount: Int = 0
     
     private init() {
         
@@ -27,17 +27,17 @@ final class Transactions {
     }
     
     static func updateDonations(){
-        donations.dividing(by:  NSDecimalNumber(integerLiteral: 1))
+        donationsCount = donationsCount + 1
     }
     
     static func getAmoutToRecieve() -> NSDecimalNumber{
-        if donations.intValue > 0{
-            return contributuionsAmount.dividing(by: donations)
+        if donationsCount > 0{
+            return contributuionsAmount.dividing(by: (NSDecimalNumber(integerLiteral: donationsCount)))
         }
         return NSDecimalNumber(integerLiteral: 0)
     }
     
     static func recieve(){
-       contributuionsAmount = contributuionsAmount.subtracting(contributuionsAmount.dividing(by: (donations)))
+       contributuionsAmount = contributuionsAmount.subtracting(contributuionsAmount.dividing(by: (NSDecimalNumber(integerLiteral: donationsCount))))
     }
 }
