@@ -11,15 +11,16 @@ import UIKit
 class FundingMessageViewController: UIViewController{
     
     var valor: String = ""
-    
-    @IBOutlet weak var labelMessage: UILabel!
+
+    @IBOutlet weak var labelValor: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if (!valor.isEmpty){
+            
+            labelValor.text = "R$ " + valor
         
-            labelMessage.text = "Você contribuiu com R$" + valor + " para a campanha de doação de sangue."
         }
     }
     
