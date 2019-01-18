@@ -10,17 +10,16 @@ import UIKit
 
 class FundingMessageViewController: UIViewController{
     
-    var valor: String = ""
+    var valor = NSDecimalNumber()
 
     @IBOutlet weak var labelValor: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if (!valor.isEmpty){
+        if valor.decimalValue > 0 {
             
-            labelValor.text = "R$ " + valor
-        
+            labelValor.text = Transactions.formatValue(value: valor)
         }
     }
     

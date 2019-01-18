@@ -55,7 +55,7 @@ class FundingViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
             Transactions.contribute(value: valor)
             
             let viewController = segue.destination as! FundingMessageViewController
-            viewController.valor = fieldValor?.text ?? "0,00"
+            viewController.valor = valor
             
         }
         
