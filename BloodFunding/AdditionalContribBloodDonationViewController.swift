@@ -18,5 +18,7 @@ class AdditionalContribBloodDonationViewController: UIViewController {
     
     override func viewDidLoad() {
         lblValue.text = Transactions.formatValue(value: FinishBloodDonateViewController.amountReceived)
+        
+        Transactions.additionalContribution()
     }
 }

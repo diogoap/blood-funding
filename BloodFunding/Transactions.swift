@@ -32,14 +32,20 @@ final class Transactions {
     }
     
     static func getAmoutToRecieve() -> NSDecimalNumber{
-        if donationsCount > 0{
-            return contributuionsAmount.dividing(by: (NSDecimalNumber(integerLiteral: donationsCount)))
-        }
-        return NSDecimalNumber(integerLiteral: 0)
+        return NSDecimalNumber(integerLiteral: 5)
     }
     
     static func recieve(){
        contributuionsAmount = contributuionsAmount.subtracting(contributuionsAmount.dividing(by: (NSDecimalNumber(integerLiteral: donationsCount))))
+    }
+    
+    static func withdraw(){
+        donationsAmount = 0
+    }
+    
+    static func additionalContribution(){
+        donationsAmount = donationsAmount.subtracting(getAmoutToRecieve())
+        contributuionsAmount = contributuionsAmount.adding(getAmoutToRecieve())
     }
     
     static func formatValue(value: NSDecimalNumber) -> String {

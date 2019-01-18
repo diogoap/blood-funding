@@ -20,7 +20,7 @@ class ResgateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         bancoPicker.delegate = self
         bancoPicker.dataSource = self
         
-        txtValor.text = Transactions.formatValue(value: Transactions.getAmoutToRecieve())
+        txtValor.text = Transactions.formatValue(value: Transactions.donationsAmount)
     }
     
     override func didReceiveMemoryWarning() {
@@ -44,8 +44,8 @@ class ResgateViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     }
     
     @IBAction func btnConfirmar(_ sender: Any) {
-        if Int(truncating: Transactions.contributuionsAmount) > 0{
-            Transactions.recieve()
+        if Int(truncating: Transactions.donationsAmount) > 0{
+            Transactions.withdraw()
         }
     }
 }
